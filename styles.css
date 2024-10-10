@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+.bookcase {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    background-color: burlywood;
+    gap: 20px 0;
+}
+
+.book {
+    width: 200px;
+    height: 300px;
+}
+
+.book-read {
+    background-color: aquamarine;
+}
+
+.book-unread {
+    background-color: lightcoral;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.author {
+    font-size: 16px;
+}
+
+.pages::after {
+    content: " pages";
+}
+
+dialog::backdrop {
+    background-color: lightblue;
+    opacity: 0.75;
+}
+
+dialog {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+button {
+    padding: 10px;
+    margin: 20px;
+}
+
+/* Form Styling */
+
+form {
+    padding: 20px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+
+.form-row > input {
+    width: 100%;
+}
+
+.last-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.last-row > p {
+    margin-right: 20px;
+}
+
+#yes {
+    margin-right: 10px;
+}
+
+.confirm {
+    margin-top: 20px;
+}
